@@ -1,0 +1,15 @@
+<?php
+
+namespace Jeka\TagsBundle\Document;
+
+use Doctrine\ODM\MongoDB\Mapping\Annotations as MongoDB;
+
+/**
+ * @MongoDB\EmbeddedDocument
+ */
+class Tag{
+    /**
+     * @MongoDB\String
+     */
+    protected $name;
+}
